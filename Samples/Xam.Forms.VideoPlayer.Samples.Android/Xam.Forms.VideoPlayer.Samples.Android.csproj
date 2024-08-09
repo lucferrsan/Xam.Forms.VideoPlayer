@@ -100,6 +100,8 @@
     <ProjectReference Include="..\..\Xam.Forms.VideoPlayer.Android\Xam.Forms.VideoPlayer.Android.csproj">
       <Project>{20076aa6-47db-4cf3-a732-2148b76e1025}</Project>
       <Name>Xam.Forms.VideoPlayer.Android</Name>
+      <TargetPlatformIdentifier>Android</TargetPlatformIdentifier>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\Xam.Forms.VideoPlayer.Samples\Xam.Forms.VideoPlayer.Samples.csproj">
       <Project>{67C2BBB1-2E92-42D1-8C69-78962C11D161}</Project>

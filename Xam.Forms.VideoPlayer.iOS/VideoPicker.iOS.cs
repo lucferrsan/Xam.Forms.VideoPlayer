@@ -2,7 +2,8 @@
 using System.Threading.Tasks;
 using UIKit;
 using Xam.Forms.VideoPlayer.iOS;
-using Xamarin.Forms;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui;
 
 [assembly: Dependency(typeof(VideoPicker))]
 

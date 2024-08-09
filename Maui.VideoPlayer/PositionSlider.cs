@@ -2,7 +2,7 @@
 using Microsoft.Maui.Controls;
 using Microsoft.Maui;
 
-namespace Xam.Forms.VideoPlayer
+namespace Maui.VideoPlayer
 {
     public class PositionSlider : Slider
     {

@@ -8,10 +8,12 @@ using AVKit;
 using CoreMedia;
 using Foundation;
 using UIKit;
+using Microsoft.Maui.Controls.Handlers.Compatibility;
+using Microsoft.Maui.Controls.Platform;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui;
 
-using Xamarin.Forms;
-using Xamarin.Forms.Platform.iOS;
-
+// TODO Xamarin.Forms.ExportRendererAttribute is not longer supported. For more details see https://github.com/dotnet/maui/wiki/Using-Custom-Renderers-in-.NET-MAUI
 [assembly: ExportRenderer(typeof(Xam.Forms.VideoPlayer.VideoPlayer),
                           typeof(Xam.Forms.VideoPlayer.iOS.VideoPlayerRenderer))]
 
@@ -131,6 +133,7 @@ namespace Xam.Forms.VideoPlayer.iOS
                     if (Element.AreTransportControlsEnabled)
                     {
                         ((AVPlayerViewController)ViewController).ShowsPlaybackControls = true;
+                        // TODO Xamarin.Forms.Device.StartTimer is no longer supported. Use Microsoft.Maui.Dispatching.DispatcherExtensions.StartTimer instead. For more details see https://learn.microsoft.com/en-us/dotnet/maui/migration/forms-projects#device-changes
                         Device.StartTimer(TimeSpan.FromSeconds(2), () =>
                         {
                             ((AVPlayerViewController)ViewController).ShowsPlaybackControls = false;

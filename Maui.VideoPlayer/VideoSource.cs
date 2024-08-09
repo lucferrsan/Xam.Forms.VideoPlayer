@@ -3,7 +3,7 @@ using Microsoft.Maui.Controls;
 using Microsoft.Maui;
 using System.ComponentModel;
 
-namespace Xam.Forms.VideoPlayer
+namespace Maui.VideoPlayer
 {
     [TypeConverter(typeof(VideoSourceConverter))]
     public abstract class VideoSource : Element

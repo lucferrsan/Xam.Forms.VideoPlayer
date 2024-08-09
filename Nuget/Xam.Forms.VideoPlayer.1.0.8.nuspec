@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
-    <id>Xam.Forms.VideoPlayer</id>
+    <id>Maui.VideoPlayer</id>
     <version>1.0.8</version>
     <title>Video Player Control for Xamarin.Forms</title>
     <authors>Roman Pristinsky</authors>
     <owners>pro777</owners>
-    <projectUrl>https://github.com/pro777s/Xam.Forms.VideoPlayer</projectUrl>
+    <projectUrl>https://github.com/pro777s/Maui.VideoPlayer</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <description>
-      The package Xam.Forms.VideoPlayer is intended for Xamarin.Forms, contains a cross-platform video player for Android, iOS and Windows UWP, based on the code provided by Charles Petzold.
+      The package Maui.VideoPlayer is intended for Xamarin.Forms, contains a cross-platform video player for Android, iOS and Windows UWP, based on the code provided by Charles Petzold.
       More information about the video player can be found here: https://docs.microsoft.com/ru-ru/samples/xamarin/xamarin-forms-samples/customrenderers-videoplayerdemos/.
       This package can be freely used for distribution, commercial use and modification.</description>
-    <summary>The package Xam.Forms.VideoPlayer is intended for Xamarin.Forms, contains a cross-platform video player for Android, iOS and Windows UWP, based on the code provided by Charles Petzold.</summary>
+    <summary>The package Maui.VideoPlayer is intended for Xamarin.Forms, contains a cross-platform video player for Android, iOS and Windows UWP, based on the code provided by Charles Petzold.</summary>
     <releaseNotes>
       1.0.8
       [All] BufferingStart and BufferingEnd events are added.
       1.0.7
       [All] Removed ShowTransportControls property. Instead, the ShowTransportControls() and HideTransportControls() methods are added.
-      [UWP] Project compilation error due to the lack of a Xam.Forms.VideoPlayer.UWP.xr.xml file has been fixed.
+      [UWP] Project compilation error due to the lack of a Maui.VideoPlayer.UWP.xr.xml file has been fixed.
       1.0.6
       [All] ShowTransportControls property added.
       [Android] Fixed bug when setting the AreTransportControlsEnabled property.
@@ -48,41 +48,41 @@
     </dependencies>
     <references>
       <group targetFramework=".NETStandard2.0">
-        <reference file="Xam.Forms.VideoPlayer.dll" />
+        <reference file="Maui.VideoPlayer.dll" />
       </group>
       <group targetFramework="MonoAndroid81">
-        <reference file="Xam.Forms.VideoPlayer.dll" />
-        <reference file="Xam.Forms.VideoPlayer.Android.dll" />
+        <reference file="Maui.VideoPlayer.dll" />
+        <reference file="Maui.VideoPlayer.Android.dll" />
       </group>
       <group targetFramework="Xamarin.iOS10">
-        <reference file="Xam.Forms.VideoPlayer.dll" />
-        <reference file="Xam.Forms.VideoPlayer.iOS.dll" />
+        <reference file="Maui.VideoPlayer.dll" />
+        <reference file="Maui.VideoPlayer.iOS.dll" />
       </group>
       <group targetFramework="UAP10.0">
-        <reference file="Xam.Forms.VideoPlayer.dll" />
-        <reference file="Xam.Forms.VideoPlayer.UWP.dll" />
+        <reference file="Maui.VideoPlayer.dll" />
+        <reference file="Maui.VideoPlayer.UWP.dll" />
       </group>
     </references>
   </metadata>
   <files>
 
     <!--netstandard-->
-    <file src="..\Xam.Forms.VideoPlayer\bin\Release\netstandard2.0\Xam.Forms.VideoPlayer.dll" target="lib\netstandard2.0" />
+    <file src="..\Maui.VideoPlayer\bin\Release\netstandard2.0\Maui.VideoPlayer.dll" target="lib\netstandard2.0" />
 
     <!--Android 81-->
-    <file src="..\Xam.Forms.VideoPlayer.Android\bin\Release\ru\Xam.Forms.VideoPlayer.Android.resources.dll" target="lib\MonoAndroid81\ru" />
-    <file src="..\Xam.Forms.VideoPlayer.Android\bin\Release\Xam.Forms.VideoPlayer.Android.dll" target="lib\MonoAndroid81" />
-    <file src="..\Xam.Forms.VideoPlayer.Android\bin\Release\Xam.Forms.VideoPlayer.dll" target="lib\MonoAndroid81" />
+    <file src="..\Maui.VideoPlayer.Android\bin\Release\ru\Maui.VideoPlayer.Android.resources.dll" target="lib\MonoAndroid81\ru" />
+    <file src="..\Maui.VideoPlayer.Android\bin\Release\Maui.VideoPlayer.Android.dll" target="lib\MonoAndroid81" />
+    <file src="..\Maui.VideoPlayer.Android\bin\Release\Maui.VideoPlayer.dll" target="lib\MonoAndroid81" />
 
     <!--iPhone Unified-->
-    <file src="..\Xam.Forms.VideoPlayer.iOS\bin\Release\Xam.Forms.VideoPlayer.dll" target="lib\Xamarin.iOS10" />
-    <file src="..\Xam.Forms.VideoPlayer.iOS\bin\Release\Xam.Forms.VideoPlayer.iOS.dll" target="lib\Xamarin.iOS10" />
+    <file src="..\Maui.VideoPlayer.iOS\bin\Release\Maui.VideoPlayer.dll" target="lib\Xamarin.iOS10" />
+    <file src="..\Maui.VideoPlayer.iOS\bin\Release\Maui.VideoPlayer.iOS.dll" target="lib\Xamarin.iOS10" />
 
     <!--UWP-->
-    <file src="..\Xam.Forms.VideoPlayer.UWP\bin\Release\Xam.Forms.VideoPlayer.dll" target="lib\UAP10.0" />
-    <file src="..\Xam.Forms.VideoPlayer.UWP\bin\Release\Xam.Forms.VideoPlayer.UWP.dll" target="lib\UAP10.0" />
-    <file src="..\Xam.Forms.VideoPlayer.UWP\bin\Release\Xam.Forms.VideoPlayer.UWP.pri" target="lib\UAP10.0" />
-    <file src="..\Xam.Forms.VideoPlayer.UWP\bin\Release\Xam.Forms.VideoPlayer.UWP.xr.xml" target="lib\UAP10.0\Xam.Forms.VideoPlayer.UWP" />
+    <file src="..\Maui.VideoPlayer.UWP\bin\Release\Maui.VideoPlayer.dll" target="lib\UAP10.0" />
+    <file src="..\Maui.VideoPlayer.UWP\bin\Release\Maui.VideoPlayer.UWP.dll" target="lib\UAP10.0" />
+    <file src="..\Maui.VideoPlayer.UWP\bin\Release\Maui.VideoPlayer.UWP.pri" target="lib\UAP10.0" />
+    <file src="..\Maui.VideoPlayer.UWP\bin\Release\Maui.VideoPlayer.UWP.xr.xml" target="lib\UAP10.0\Maui.VideoPlayer.UWP" />
 
   </files>
 </package>

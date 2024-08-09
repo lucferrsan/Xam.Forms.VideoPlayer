@@ -3,19 +3,21 @@ using System.ComponentModel;
 
 using Windows.Storage;
 using Windows.Storage.Streams;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Media;
-
-using Xamarin.Forms;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media;
 using Xamarin.Forms.Platform.UWP;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui;
 
+// TODO Xamarin.Forms.ExportRendererAttribute is not longer supported. For more details see https://github.com/dotnet/maui/wiki/Using-Custom-Renderers-in-.NET-MAUI
 [assembly: ExportRenderer(typeof(Xam.Forms.VideoPlayer.VideoPlayer),
                           typeof(Xam.Forms.VideoPlayer.UWP.VideoPlayerRenderer))]
 
 namespace Xam.Forms.VideoPlayer.UWP
 {
-    public class VideoPlayerRenderer : ViewRenderer<VideoPlayer, MediaElement>
+    public class VideoPlayerRenderer : ViewRenderer<VideoPlayer, // TODO Microsoft.UI.Xaml.Controls.MediaElement is not yet supported in WindowsAppSDK. For more details see https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/what-is-supported
+MediaElement>
     {
         public static void Init() { }
 
@@ -27,6 +29,7 @@ namespace Xam.Forms.VideoPlayer.UWP
             {
                 if (Control == null)
                 {
+                    // TODO Microsoft.UI.Xaml.Controls.MediaElement is not yet supported in WindowsAppSDK. For more details see https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/what-is-supported
                     MediaElement mediaElement = new MediaElement();
                     SetNativeControl(mediaElement);
 
@@ -133,6 +136,7 @@ namespace Xam.Forms.VideoPlayer.UWP
                     if (Element.AreTransportControlsEnabled)
                     {
                         Control.TransportControls.Show();
+                        // TODO Xamarin.Forms.Device.StartTimer is no longer supported. Use Microsoft.Maui.Dispatching.DispatcherExtensions.StartTimer instead. For more details see https://learn.microsoft.com/en-us/dotnet/maui/migration/forms-projects#device-changes
                         Device.StartTimer(TimeSpan.FromSeconds(2), () =>
                         {
                             Control.TransportControls.Hide();

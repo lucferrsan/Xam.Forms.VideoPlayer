@@ -2,7 +2,7 @@
 using System.Globalization;
 using Microsoft.Maui.Controls;
 
-namespace Xam.Forms.VideoPlayer
+namespace Maui.VideoPlayer
 {
     public class VideoSourceConverter : IValueConverter
     {

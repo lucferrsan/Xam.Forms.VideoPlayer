@@ -2,15 +2,16 @@
 using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
-using Xamarin.Forms;
 
-using Xam.Forms.VideoPlayer.Android;
+using Maui.VideoPlayer.Android;
 using Application = Android.App.Application;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui;
 //using MainActivity = Xamarin.Forms.Platform.Android.FormsAppCompatActivity;
 
 [assembly: Dependency(typeof(VideoPicker))]
 
-namespace Xam.Forms.VideoPlayer.Android
+namespace Maui.VideoPlayer.Android
 {
     public class VideoPicker : IVideoPicker
     {

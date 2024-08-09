@@ -1,7 +1,7 @@
-# Xam.Forms.VideoPlayer control for Xamarin Forms
+# Maui.VideoPlayer control for Xamarin Forms
 
 #### Setup
-* Available on NuGet: https://www.nuget.org/packages/Xam.Forms.VideoPlayer/ 
+* Available on NuGet: https://www.nuget.org/packages/Maui.VideoPlayer/ 
 * Install in your .Net Standard 2.0 and client projects.
 
 **Platform Support**
@@ -17,14 +17,14 @@
 In your Android projects (MainActivity.cs) call:
 
 ```
-Xam.Forms.VideoPlayer.Android.VideoPlayerRenderer.Init();
+Maui.VideoPlayer.Android.VideoPlayerRenderer.Init();
 Xamarin.Forms.Init();
 ```
 
 In your iOS projects (AppDelegate.cs) call:
 
 ```
-Xam.Forms.VideoPlayer.iOS.VideoPlayerRenderer.Init();
+Maui.VideoPlayer.iOS.VideoPlayerRenderer.Init();
 Xamarin.Forms.Init();
 ```
 
@@ -32,7 +32,7 @@ In UWP platform (App.xaml.cs) call:
 
 ```
 Xamarin.Forms.DependencyService.Register<VideoPicker>();
-Xam.Forms.VideoPlayer.UWP.VideoPlayerRenderer.Init();
+Maui.VideoPlayer.UWP.VideoPlayerRenderer.Init();
 Xamarin.Forms.Forms.Init(e);
 ```
 
@@ -47,7 +47,7 @@ For more information, see the folder Samples.
 1.0.7
 
 [All] Removed ShowTransportControls property. Instead, the ShowTransportControls() and HideTransportControls() methods are added.
-[UWP] Project compilation error due to the lack of a Xam.Forms.VideoPlayer.UWP.xr.xml file has been fixed.
+[UWP] Project compilation error due to the lack of a Maui.VideoPlayer.UWP.xr.xml file has been fixed.
 
 1.0.6
 

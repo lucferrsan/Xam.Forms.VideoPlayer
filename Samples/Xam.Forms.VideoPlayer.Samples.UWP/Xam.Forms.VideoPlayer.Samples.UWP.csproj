@@ -7,17 +7,17 @@
     <ProjectGuid>{6F7C2A83-F1F7-4DB0-889B-92A2A71B5350}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Xam.Forms.VideoPlayer.Samples.UWP</RootNamespace>
-    <AssemblyName>Xam.Forms.VideoPlayer.Samples.UWP</AssemblyName>
+    <RootNamespace>Maui.VideoPlayer.Samples.UWP</RootNamespace>
+    <AssemblyName>Maui.VideoPlayer.Samples.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.18362.0</TargetPlatformVersion>
+    <TargetPlatformVersion>10.0.22621.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>Xam.Forms.VideoPlayer.Samples.UWP_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>Maui.VideoPlayer.Samples.UWP_TemporaryKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
@@ -149,13 +149,13 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Xam.Forms.VideoPlayer.UWP\Xam.Forms.VideoPlayer.UWP.csproj">
+    <ProjectReference Include="..\..\Maui.VideoPlayer.UWP\Maui.VideoPlayer.UWP.csproj">
       <Project>{b8c0f852-1501-4146-b424-5766014ef4d9}</Project>
-      <Name>Xam.Forms.VideoPlayer.UWP</Name>
+      <Name>Maui.VideoPlayer.UWP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Xam.Forms.VideoPlayer.Samples\Xam.Forms.VideoPlayer.Samples.csproj">
+    <ProjectReference Include="..\Maui.VideoPlayer.Samples\Maui.VideoPlayer.Samples.csproj">
       <Project>{67C2BBB1-2E92-42D1-8C69-78962C11D161}</Project>
-      <Name>Xam.Forms.VideoPlayer.Samples</Name>
+      <Name>Maui.VideoPlayer.Samples</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

@@ -1,4 +1,4 @@
 <resources>
     <string name="hello">Hello World, Click Me!</string>
-    <string name="app_name">Xam.Forms.VideoPlayer.Android</string>
+    <string name="app_name">Maui.VideoPlayer.Android</string>
 </resources>

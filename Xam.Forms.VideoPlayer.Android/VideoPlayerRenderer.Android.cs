@@ -7,11 +7,8 @@ using Android.Content;
 using Android.Widget;
 using NSUri = Android.Net.Uri;
 using ARelativeLayout = Android.Widget.RelativeLayout;
-
-using Xamarin.Forms;
-using Xamarin.Forms.Platform.Android;
-using Xam.Forms.VideoPlayer;
-using Xam.Forms.VideoPlayer.Android;
+using Maui.VideoPlayer;
+using Maui.VideoPlayer.Android;
 using Android.Graphics;
 using Android.Media;
 using System.Collections.Generic;
@@ -19,10 +16,18 @@ using System.Linq;
 using Android.Runtime;
 using Java.Util;
 using Color = Android.Graphics.Color;
+using Microsoft.Maui.Graphics;
+using Microsoft.Maui.Controls.Handlers.Compatibility;
+using Microsoft.Maui.Controls.Platform;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui;
+using Microsoft.Maui.Media;
+using Microsoft.Maui.Controls.Compatibility;
 
+// TODO Xamarin.Forms.ExportRendererAttribute is not longer supported. For more details see https://github.com/dotnet/maui/wiki/Using-Custom-Renderers-in-.NET-MAUI
 [assembly: ExportRenderer(typeof(VideoPlayer), typeof(VideoPlayerRenderer))]
 
-namespace Xam.Forms.VideoPlayer.Android
+namespace Maui.VideoPlayer.Android
 {
     public class MediaPlayerVideoSizeChangedListener : Java.Lang.Object, MediaPlayer.IOnVideoSizeChangedListener
     {
@@ -55,7 +60,7 @@ namespace Xam.Forms.VideoPlayer.Android
                 {
                     // Save the VideoView for future reference
                     videoView = new VideoView(Context);
-                    videoView.SetBackgroundColor(Color.Transparent);
+                    videoView.SetBackgroundColor(Colors.Transparent);
                     videoView.Info += VideoView_Info;
                     videoView.Completion += VideoView_Completion;
                     videoView.Error += VideoView_Error;
@@ -207,6 +212,7 @@ namespace Xam.Forms.VideoPlayer.Android
                     {
                         //mediaController.Show(1000);
                         mediaController.Show();
+                        // TODO Xamarin.Forms.Device.StartTimer is no longer supported. Use Microsoft.Maui.Dispatching.DispatcherExtensions.StartTimer instead. For more details see https://learn.microsoft.com/en-us/dotnet/maui/migration/forms-projects#device-changes
                         Device.StartTimer(TimeSpan.FromSeconds(2), () =>
                         {
                             mediaController.Hide();

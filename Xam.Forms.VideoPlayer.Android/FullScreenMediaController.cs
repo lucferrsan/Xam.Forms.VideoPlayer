@@ -12,7 +12,7 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 
-namespace Xam.Forms.VideoPlayer.Android
+namespace Maui.VideoPlayer.Android
 {
     public class FullScreenMediaController : MediaController
     {
